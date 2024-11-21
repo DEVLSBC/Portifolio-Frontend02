@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(/imagens/bg.jpg);
+    background-image: url(bg.jpg);
 }
 
 .container {
