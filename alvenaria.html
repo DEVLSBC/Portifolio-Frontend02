@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Militar Ikariam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagens/defaultselect.png">
+</head>
+<body>
+    <script>
+        window.onload = function () {
+            const userResponse = confirm("Módulo em criação!\n\nClique em 'OK' para continuar.");
+            if (userResponse) {
+                window.location.href = "index.html";
+            }
+        };
+    </script>
+    <header class="header">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="militar.html">Militar</a>
+            <a href="alvenaria.html">Alvenaria</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-section">
+            <!-- Banner da esquerda -->
+            <img src="imagens/ikariam-bg.png" alt="Banner" class="banner">
+        </div>
+        <div class="right-section">
+            <!-- Título e campos de entrada -->
+            <h2>Calculadora Alvenaria</h2>
+
+                <form id="formularioAlvenaria">
+                    <div class="input-group">
+                        <label for="edificio">Edificio</label>
+                        <select id="edificio" name="edificio">
+                            <option value="default">Selecione o edificio</option>
+                            <option value="ed1">Edificio</option>
+                            <option value="ed2">Edificio</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="nivel">Nivel do edificio</label>
+                        <select id="nivel" name="nivel">
+                        </select>
+                    </div>
+                    <button class="custom-btn btn-1" type="submit">Calcular</button>
+                </form>
+                <hr>     
+        </div>
+    </div>  
+</body>
+<script src="js/alvenaria.js"></script>
+</html>
