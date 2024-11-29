@@ -142,10 +142,15 @@ h3 {
     text-align: center;
 }
 
+.right-section #formularioCalc {
+    align-self:auto;
+    text-align: center;
+}
+
 button {
     margin-bottom: 10px;
-    width: 20% !important;
-    margin-left: 40%;
+    width: 20%;
+    display: inline-block;
 }
 
 .custom-btn {
@@ -184,6 +189,10 @@ button {
     .left-section .banner {
         max-width: 400px;
     }
+    button {
+        width: 30% !important;
+        display: inline-block;
+    }
 }
 
 @media (max-width: 900px) {
@@ -204,6 +213,10 @@ button {
     button.custom-btn {
         width: 60%; /* Aumenta o tamanho do botão no centro em telas menores */
         margin-left: 20%;
+    }
+    button {
+        width: 30% !important;
+        display: inline-block;
     }
 }
 
@@ -240,6 +253,10 @@ button {
         width: 80%; /* Ajusta o botão para quase toda a largura em dispositivos muito pequenos */
         margin-left: 10%;
     }
+    button {
+        width: 30% !important;
+        display: inline-block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -259,6 +276,10 @@ button {
 
     button.custom-btn {
         font-size: 16px;
+    }
+    button {
+        width: 30% !important;
+        display: inline-block;
     }
 }
 
