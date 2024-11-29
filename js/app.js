@@ -53,35 +53,38 @@ function calcular() {
         }
     } else if (tipo === 'tropa') {
         while (total > valor || total === -1) {
+
             // Definir proporções
             let prop1 = qnt;
-            let prop2 = qnt * 2;
             let prop3 = qnt * 3;
-            let prop4 = qnt * 4;
-            let prop12 = qnt * 12;
-            let prop13 = qnt * 13;
+            let prop6 = qnt * 6;
+            let prop89 = qnt * 89;
+            let prop133 = qnt * 133;
 
             // Cálculo do total
-            let hpprop = hp * prop12;
-            let bbprop = bb * prop3;
-            let espprop = esp * prop13;
-            let giroprop = giro * prop4;
-            let gvprop = gv * prop2;
+            let hpprop = hp * prop89;
+            let bbprop = bb * prop1;
+            let espprop = esp * prop133;
+            let giroprop = giro * prop3;
+            let gvprop = 0;
             let ariprop = ari * prop1;
-            let fuziprop = fuzi * prop2;
+            let fuziprop = fuzi * prop6;
             let mortprop = mort * prop1;
+
+            
+
 
             total = hpprop + bbprop + espprop + giroprop + gvprop + ariprop + fuziprop + mortprop;
 
             if (total <= valor) {
                 // Exibir as quantidades calculadas nos inputs
-                document.getElementById("input1").value = prop12;
-                document.getElementById("input2").value = prop3;
-                document.getElementById("input3").value = prop13;
-                document.getElementById("input4").value = prop4;
-                document.getElementById("input5").value = prop2;
+                document.getElementById("input1").value = prop89;
+                document.getElementById("input2").value = prop1;
+                document.getElementById("input3").value = prop133;
+                document.getElementById("input4").value = prop3;
+                document.getElementById("input5").value = '0';
                 document.getElementById("input6").value = prop1;
-                document.getElementById("input7").value = prop2;
+                document.getElementById("input7").value = prop6;
                 document.getElementById("input8").value = prop1;
             }
 
